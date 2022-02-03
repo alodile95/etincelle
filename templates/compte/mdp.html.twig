@@ -6,6 +6,9 @@
     <h1>Modifier mon mot de passe</h1>
     <a href="{{ path('compte') }}">Retourner à mon compte</a>
     <hr>
+    {% if notification %}
+        <div>{{ notification }}</div>
+    {% endif %}
     {{ form(form) }}
 
 {% endblock %}

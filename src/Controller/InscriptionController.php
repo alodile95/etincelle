@@ -29,10 +29,10 @@ class InscriptionController extends AbstractController
         $form = $this->createForm(InscriptionType::class, $user);
 
         $form->handleRequest($request);
+
         if($form->isSubmitted() && $form->isValid()){
 
             $user = $form->getData();
-
             $password = $hasher->hashPassword($user,$user->getPassword());
             $user->setPassword($password);
 
@@ -45,3 +45,4 @@ class InscriptionController extends AbstractController
         ]);
     }
 }
+//todo mettre un message quand on est bien inscrit et faire la redirection vers la connexion
