@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ article.titre }}{% endblock %}
+
+{% block body %}
+    <h1>{{ article.titre }}</h1>
+    <div>article écrit le {{article.dateCreation.format('d/m/Y')}}</div>
+    <div>
+            <div><img src="/uploads/{{ article.image }}" alt="{{ article.titre }}"></div>
+            <div>{{ article.description }}</div>
+            <div>{{ article.corps }}</div>
+    </div>
+{% endblock %}
