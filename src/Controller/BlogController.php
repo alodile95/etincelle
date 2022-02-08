@@ -18,9 +18,9 @@ class BlogController extends AbstractController
     }
 
     /**
-     * @Route("/blog", name="blog")
+     * @Route("/actualites", name="actualites")
      */
-    public function blog(): Response
+    public function actualites(): Response
     {
         $articles = $this->entityManager->getRepository(Article::class)->findAll();
 
@@ -30,7 +30,7 @@ class BlogController extends AbstractController
     }
 
     /**
-     * @Route("/blog/{slug}", name="article")
+     * @Route("/actualites/{slug}", name="article")
      */
     public function article($slug)
     {
@@ -46,3 +46,4 @@ class BlogController extends AbstractController
     }
 
 }
+//TODO afficher les news en commençant par les plus récentes

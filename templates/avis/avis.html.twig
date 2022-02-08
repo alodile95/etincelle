@@ -4,6 +4,7 @@
 
 {% block body %}
 <h1>Bienvenue sur les avis</h1>
+    <a href="{{ path('avis_edition') }}"><button>Donnez votre avis</button></a>
     <div>
         {% for avis in avis %}
             {% if avis.actif == true %}

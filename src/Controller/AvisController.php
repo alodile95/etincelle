@@ -62,3 +62,8 @@ class AvisController extends AbstractController
         ]);
     }
 }
+//TODO afficher les avis en commençant par le plus récent
+//TODO faire une page pour envoyer un message à Yvette
+//TODO faire une page de demande de RDV
+//TODO ? faire une page avec les messages pour Yvette
+//TODO ? faire une page avec les demandes de RDV pour Yvette
