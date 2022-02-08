@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon compte{% endblock %}
+
+{% block body %}
+    <h1>Mon compte</h1>
+    Bienvenue {{ app.user.pseudo }} dans votre compte.
+    <br>Depuis cet espace, vous pouvez
+    <ul>
+        <a href="{{ path('compte_mdp') }}"><li>changer votre mot de passe</li></a>
+        <li>m'envoyer un message auquel je répondrai rapidement</li>
+        <li>me laisser un commentaire sur votre expérience au contact de la méthode Vittoz</li>
+    </ul>
+
+{% endblock %}

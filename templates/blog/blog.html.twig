@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Blog{% endblock %}
+
+{% block body %}
+<h1>Bienvenue sur mon blog</h1>
+    <div>
+        {% for article in articles %}
+            <div>
+                <div>
+                   <h2>{{ article.titre }}</h2>
+                </div>
+                <div>article écrit le {{article.dateCreation.format('d/m/y')}}</div>
+                <a href="{{ path('article',{'slug': article.slug}) }}"><img
+                        src="/uploads/{{ article.image }}" alt="{{ article.titre }}"></a>
+                <div>
+                    {{ article.description }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

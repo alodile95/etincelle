@@ -25,23 +25,29 @@ class InscriptionController extends AbstractController
      */
     public function inscription(Request $request, UserPasswordHasherInterface $hasher): Response
     {
+        $notification = null;
         $user = new User();
         $form = $this->createForm(InscriptionType::class, $user);
 
         $form->handleRequest($request);
-        if($form->isSubmitted() && $form->isValid()){
+
+        if ($form->isSubmitted() && $form->isValid()) {
 
             $user = $form->getData();
-
-            $password = $hasher->hashPassword($user,$user->getPassword());
+            $password = $hasher->hashPassword($user, $user->getPassword());
             $user->setPassword($password);
 
             $this->entityManager->persist($user);
             $this->entityManager->flush();
+            return $this->redirectToRoute('app_login');
+        } else {
+            $notification = "Il y a eu un problème lors de votre inscription.
+            Veuillez recommencer.";
         }
 
-        return $this->render('inscription/inscription.html.twig',[
-            'form'=>$form->createView()
+        return $this->render('inscription/inscription.html.twig', [
+            'form' => $form->createView(),
+            'notification' => $notification
         ]);
     }
 }
