@@ -22,7 +22,7 @@ class ArticleCrudController extends AbstractCrudController
     {
         return [
             TextField::new('titre'),
-            SlugField::new("slug")->setTargetFieldName('titre'),
+            SlugField::new("slug")->setTargetFieldName('titre')->hideOnIndex(),
             ImageField::new('image')
                 ->setBasePath('uploads/')
                 ->setUploadDir('public/uploads/')
@@ -33,5 +33,4 @@ class ArticleCrudController extends AbstractCrudController
             TextareaField::new("corps")
         ];
     }
-
 }

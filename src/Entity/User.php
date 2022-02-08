@@ -42,15 +42,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     private $pseudo;
 
-    /**
-     * @ORM\OneToMany(targetEntity=Avis::class, mappedBy="auteur")
-     */
-    private $avis;
-
-    public function __construct()
-    {
-        $this->avis = new ArrayCollection();
-    }
 
 
     public function getId(): ?int
@@ -153,36 +144,5 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
-
-    /**
-     * @return Collection|Avis[]
-     */
-    public function getAvis(): Collection
-    {
-        return $this->avis;
-    }
-
-    public function addAvi(Avis $avi): self
-    {
-        if (!$this->avis->contains($avi)) {
-            $this->avis[] = $avi;
-            $avi->setAuteur($this);
-        }
-
-        return $this;
-    }
-
-    public function removeAvi(Avis $avi): self
-    {
-        if ($this->avis->removeElement($avi)) {
-            // set the owning side to null (unless already changed)
-            if ($avi->getAuteur() === $this) {
-                $avi->setAuteur(null);
-            }
-        }
-
-        return $this;
-    }
 }
-//todo voir comment intégrer date d'inscription
-
+//TODO supprimer le mail de user et changer mode de contrôle (inscription que pour Yvette)

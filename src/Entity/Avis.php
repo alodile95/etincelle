@@ -23,9 +23,14 @@ class Avis
     private $actif = false;
 
     /**
-     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="avis")
+     * @ORM\Column(type="string", length=255, nullable=false)
      */
-    private $auteur;
+    private $pseudo;
+
+    /**
+     * @ORM\Column(type="string", length=180, unique=false)
+     */
+    private $email;
 
     /**
      * @ORM\Column(type="datetime_immutable")
@@ -65,14 +70,26 @@ class Avis
         return $this;
     }
 
-    public function getAuteur(): ?User
+    public function getEmail(): ?string
     {
-        return $this->auteur;
+        return $this->email;
     }
 
-    public function setAuteur(?User $auteur): self
+    public function setEmail(string $email): self
     {
-        $this->auteur = $auteur;
+        $this->email = $email;
+
+        return $this;
+    }
+
+    public function getPseudo(): ?string
+    {
+        return $this->pseudo;
+    }
+
+    public function setPseudo(?string $pseudo): self
+    {
+        $this->pseudo = $pseudo;
 
         return $this;
     }
@@ -88,6 +105,7 @@ class Avis
 
         return $this;
     }
+
 
     public function getContexte(): ?Contexte
     {
@@ -124,4 +142,5 @@ class Avis
 
         return $this;
     }
+
 }
