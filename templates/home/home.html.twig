@@ -1,7 +1,28 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Bienvenue sur votre page Home{% endblock %}
+{% block title %}Bienvenue sur le site Étincelle-Vittoz{% endblock %}
 
 {% block body %}
-<h1>Bienvenue à l'accueil </h1>
+    <h1>Bienvenue sur le site Étincelle-Vittoz</h1>
+    <p>Je serais heureuse de pouvoir vous accompagner dans un chemin en profondeur qui vous mènera vers un
+        mieux-vivre.<br>
+        Vous trouverez ici des renseignements sur la méthode Vittoz que j’utilise aussi bien pour enfants ou adultes, en
+        individuel ou en groupe, à mon cabinet Étincelle-Vittoz de Poissy, dans les écoles ou en entreprise.<br>
+        Yvette Ogier, psychothérapeute Vittoz
+    </p>
+    Avec moi, vous allez pouvoir
+        <lu>
+            <Li>partager vos émotions</Li>
+            <Li>gérer votre stress</Li>
+            <Li>vous relaxer</Li>
+            <Li>développer la présence à soi</Li>
+            <Li>vous concentrer</Li>
+            <Li>redécouvrir la joie d’apprendre</Li>
+        </lu>
+        <br>
+        Comment nous y prendrons-nous ? Venez le découvrir…<br><br>
+    <div><a href="{{ path('que') }}"><button>Que faisons-nous ensemble ?</button></a></div><br>
+    <div><a href="{{ path('pour-qui') }}"><button>Pour qui ?</button></a></div><br>
+    <div><a href="{{ path('vittoz') }}"><button>La méthode Vittoz</button></a></div>
+
 {% endblock %}

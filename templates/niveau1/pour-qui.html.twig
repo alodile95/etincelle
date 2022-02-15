@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pour qui ?{% endblock %}
+
+{% block body %}
+    <h1>Pour qui ?</h1>
+    <p>A tous les moments de votre vie, vous pouvez avoir besoin de vous poser et de prendre le temps de résoudre vos
+        soucis, petits ou gros. Et même si vous ne ressentez pas de problème, vous pouvez améliorer votre rapport à
+        votre corps, à votre esprit, à votre cœur, aux autres et au monde.<br>
+
+    <li>L’enfant doit trouver sa bonne place dans la famille.</li>
+    <li>L’enfant veut s’épanouir dans ses découvertes, ses apprentissages, sa réussite scolaire.</li>
+    <li>L’adolescent aimerait mieux vivre les changements qui s’opèrent en lui, canaliser sa volonté, faire plus
+        facilement des choix et avoir des relations apaisées avec son entourage.
+    </li>
+    <li>Le parent souhaite le meilleur pour son enfant et pour lui-même et ne sait pas toujours tout concilier.</li>
+    <li>Le professionnel veut être performant, utile à son entreprise et bien intégré.</li>
+    <li>L’enseignant désire transmettre avec confiance, bienveillance et passion.</li>
+    <li>La personne malade supporte mal les contraintes imposées par son corps et aimerait se réconcilier avec lui.</li>
+    <li>L’adulte qui est à un période charnière de sa vie ou à un moment difficile voudrait sentir qu’il « maîtrise ».
+    </li>
+
+    A tous ces moments et dans tous ces cas, la méthode Vittoz apporte des réponses. Les réponses sont en vous. Il s’agit de les révéler. Je vais vous y aider.<br>
+    <br>
+    Je vous propose différents cadres et différentes approches pour faire ce travail avec vous.<br>
+    </p>
+
+    <div><a href="{{ path('cabinet') }}"><button>Les séances au cabinet</button></a></div>
+    <div><a href="{{ path('ecole') }}"><button>Les séances à l'école</button></a></div>
+    <div><a href="{{ path('entreprise') }}"><button>Les séances en entreprise</button></a></div>
+    <div><a href="{{ path('home') }}"><button>Nous envoyer un message</button></a></div>
+    <div><a href="{{ path('home') }}"><button>Prendre rendez-vous</button></a></div>
+
+
+{% endblock %}

@@ -18,19 +18,18 @@ class BlogController extends AbstractController
     }
 
     /**
-     * @Route("/blog", name="blog")
+     * @Route("/actualites", name="actualites")
      */
-    public function blog(): Response
+    public function actualites(): Response
     {
-        $articles = $this->entityManager->getRepository(Article::class)->findAll();
-
+        $articles = $this->entityManager->getRepository(Article::class)->findBy([], ['date_creation' => 'DESC']);
         return $this->render('blog/blog.html.twig', [
             'articles' => $articles
         ]);
     }
 
     /**
-     * @Route("/blog/{slug}", name="article")
+     * @Route("/actualites/{slug}", name="article")
      */
     public function article($slug)
     {

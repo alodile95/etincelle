@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les séances à l'école{% endblock %}
+
+{% block body %}
+    <h1>Les séances à l'école</h1>
+    <p>Je me rends au cœur même des écoles et y propose des séances tournées vers l’attention et la concentration. Avec
+        des exercices simples et ludiques, les enfants trouvent en eux les ressources dont ils ont besoin pour leur
+        épanouissement et leur réussite.<br>
+        Je fais ce travail en partenariat avec les enseignants. Je suis à leur service pour préparer ces
+        interventions.<br>
+        Par ailleurs, je peux les recevoir et les aider pour qu’ils se sentent au mieux dans leur rôle de pédagogue.<br> <br>
+
+        Formules ? Durée ?<br><br>
+        Tarif d’une intervention : …€ ?<br><br>
+
+
+        Je suis déjà intervenue dans ces établissements :
+    <ul>
+        <li>IND Poissy</li>
+        <li>Montessori</li>
+        <li>CFA Sainte Catherine</li>
+        <li>CFA AFIPE</li>
+    </ul>
+    </p>
+
+    <div><a href="{{ path('que') }}"><button>Que faisons-nous ensemble ?</button></a></div>
+    <div><a href="{{ path('home') }}"><button>Nous envoyer un message</button></a></div>
+    <div><a href="{{ path('home') }}"><button>Prendre rendez-vous</button></a></div>
+{% endblock %}
