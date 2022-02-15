@@ -25,7 +25,7 @@ class AvisController extends AbstractController
      */
     public function avis(): Response
     {
-        $avis = $this->entityManager->getRepository(Avis::class)->findAll();
+        $avis = $this->entityManager->getRepository(Avis::class)->findBy([], ['created_at' => 'DESC']);
 
         return $this->render('avis/avis.html.twig',[
             'avis'=> $avis
