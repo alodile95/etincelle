@@ -22,8 +22,7 @@ class BlogController extends AbstractController
      */
     public function actualites(): Response
     {
-        $articles = $this->entityManager->getRepository(Article::class)->findAll();
-
+        $articles = $this->entityManager->getRepository(Article::class)->findBy([], ['date_creation' => 'DESC']);
         return $this->render('blog/blog.html.twig', [
             'articles' => $articles
         ]);
@@ -46,4 +45,3 @@ class BlogController extends AbstractController
     }
 
 }
-//TODO afficher les news en commençant par les plus récentes

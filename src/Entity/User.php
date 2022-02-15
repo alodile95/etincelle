@@ -145,4 +145,3 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 }
-//TODO supprimer le mail de user et changer mode de contrôle (inscription que pour Yvette)
