@@ -50,7 +50,7 @@ class AvisController extends AbstractController
             $this->entityManager->flush();
 
 //  envoi d'un email à l'administrateur pour prévenir de l'arrivée d'un nouveau message
-            $content = "'<b>" .$avis->getPseudo()."</b>' t'a laissé l'avis suivant depuis son adresse ". $avis->getEmail()." : <br><br/> <b>". $avis->getTitre() . "</b><br><br/>" . $avis->getCorps();
+            $content = "'<b>" .$avis->getPseudo()."</b>' t'a laissé l'avis suivant depuis son adresse ". $avis->getEmail()." : <br><br>Titre de l'avis :<b>". $avis->getTitre() . "</b><br><br>Corps du message :<br><b>" . $avis->getCorps() . "</b><br><br><button>Aller sur le site pour le valider</button>";
             $mail = new Mail();
             $mail->send('alain.pegeot@gmail.com', 'Alain','Tu as un nouvel avis sur ton site.',$content);
 
@@ -62,7 +62,6 @@ class AvisController extends AbstractController
         ]);
     }
 }
-//TODO faire une page pour envoyer un message à Yvette
-//TODO faire une page de demande de RDV
-//TODO ? faire une page avec les messages pour Yvette
-//TODO ? faire une page avec les demandes de RDV pour Yvette
+//TODO faire une page avec les messages pour Yvette
+//TODO faire une page de demande de RDV ?
+//TODO faire une page avec les demandes de RDV pour Yvette?
