@@ -12,39 +12,43 @@
 
     </div>
     <div class="boite">
-       <div class="contenu"><h3>Je serais heureuse de pouvoir vous accompagner dans un chemin en profondeur qui vous mènera vers un
-               mieux-vivre.<br>
-               Vous trouverez ici des renseignements sur la méthode Vittoz que j’utilise aussi bien pour enfants ou
-               adultes, en
-               individuel ou en groupe, à mon cabinet Étincelle-Vittoz de Poissy, dans les écoles ou en entreprise.<br>
-               <em>Yvette Ogier</em>, psychothérapeute Vittoz
-           </h3><br>
-       </div>
-        <div><a href="{{ path('qui') }}">
-                <button>Qui suis-je ?</button>
-            </a></div>
-        <br>
-        <p>Avec moi, vous allez pouvoir</p>
-        <lu>
-            <Li>partager vos émotions</Li>
-            <Li>gérer votre stress</Li>
-            <Li>vous relaxer</Li>
-            <Li>développer la présence à soi</Li>
-            <Li>vous concentrer</Li>
-            <Li>redécouvrir la joie d’apprendre</Li>
-        </lu>
-        <br>
-        <p>Comment nous y prendrons-nous ? Venez le découvrir…</p> <br><br>
-        <div><a href="{{ path('que') }}">
-                <button>Que faisons-nous ensemble ?</button>
-            </a></div>
-        <br>
-        <div><a href="{{ path('pour-qui') }}">
-                <button>Pour qui ?</button>
-            </a></div>
-        <br>
-        <div><a href="{{ path('vittoz') }}">
-                <button>La méthode Vittoz</button>
-            </a></div>
+        <div class="yvette"><img src="{{ asset('assets/img/Yvette_détourée.webp') }}" alt="Yvette Ogier"></div>
+        <div class="texte"><p>Je serais heureuse de pouvoir vous accompagner dans un chemin en profondeur qui vous
+                mènera vers un
+                mieux-vivre.<br>
+                Vous trouverez ici des renseignements sur la méthode Vittoz que j’utilise aussi bien pour les enfants
+                que pour les adultes, en individuel ou en groupe, à mon cabinet Étincelle-Vittoz de Poissy, dans les
+                écoles ou en entreprise.<br><br>
+                <em style="margin: 2rem">Yvette Ogier,</em> psychothérapeute Vittoz
+            </p>
+            <div class="bouton"><a href="{{ path('qui') }}">Qui suis-je ?
+                </a>
+            </div>
+        </div>
     </div>
+
+    <br>
+    <p>Avec moi, vous allez pouvoir</p>
+    <lu>
+        <Li>partager vos émotions</Li>
+        <Li>gérer votre stress</Li>
+        <Li>vous relaxer</Li>
+        <Li>développer la présence à soi</Li>
+        <Li>vous concentrer</Li>
+        <Li>redécouvrir la joie d’apprendre</Li>
+    </lu>
+    <br>
+    <p>Comment nous y prendrons-nous ? Venez le découvrir…</p> <br><br>
+    <div><a href="{{ path('que') }}">
+            <button>Que faisons-nous ensemble ?</button>
+        </a></div>
+    <br>
+    <div><a href="{{ path('pour-qui') }}">
+            <button>Pour qui ?</button>
+        </a></div>
+    <br>
+    <div><a href="{{ path('vittoz') }}">
+            <button>La méthode Vittoz</button>
+        </a></div>
+
 {% endblock %}
