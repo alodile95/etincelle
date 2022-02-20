@@ -11,48 +11,57 @@
         </div>
 
     </div>
-    <div class="boite">
-        <div class="colonne1"><img src="{{ asset('assets/img/Yvette_détourée.webp') }}" alt="Yvette Ogier">
+    <div class="ligne1">
+        <div class="colonne1"><img src="{{ asset('assets/img/Yvette_détourée.webp') }}" alt="Yvette Ogier"
+                                   height="550px" width="270    px">
         </div>
-        <div class="colonne2"><p>Je serais heureuse de pouvoir vous accompagner dans un chemin en profondeur qui vous
-                mènera vers un
-                mieux-vivre.<br>
-                Vous trouverez ici des renseignements sur la méthode Vittoz que j’utilise aussi bien pour les enfants
-                que pour les adultes, en individuel ou en groupe, à mon cabinet Étincelle-Vittoz de Poissy, dans les
-                écoles ou en entreprise.<br><br>
-                <em style="margin-left: 5rem">Yvette Ogier,</em> psychothérapeute Vittoz
-            </p>
+        <div class="colonne2">
+            <div><p>Je serais heureuse de pouvoir vous accompagner dans un chemin en profondeur qui vous
+                    mènera vers un
+                    mieux-vivre.<br>
+                    Vous trouverez ici des renseignements sur la méthode Vittoz que j’utilise aussi bien pour les
+                    enfants
+                    que pour les adultes, en individuel ou en groupe, à mon cabinet Étincelle-Vittoz de Poissy, dans les
+                    écoles ou en entreprise.<br><br>
+                    <em style="margin-left: 5rem">Yvette Ogier,</em> psychothérapeute Vittoz </p>
+            </div>
+            <div class="bouton1" style="padding: 1.9rem">
+                <a href="{{ path('qui') }}">Qui suis-je ?</a>
+            </div>
         </div>
-        <div class="bouton1"><a href="{{ path('qui') }}">Qui suis-je ?
-            </a>
-        </div>
+
     </div>
-    <div class="texte">
-        <div>
-            <div class="colonne1"></div>
-            <p>Avec moi, vous allez pouvoir</p>
-            <lu>
-                <Li>partager vos émotions</Li>
-                <Li>gérer votre stress</Li>
-                <Li>vous relaxer</Li>
-                <Li>développer la présence à soi</Li>
-                <Li>vous concentrer</Li>
-                <Li>redécouvrir la joie d’apprendre</Li>
+    <div class="ligne2" style="background-image: url('{{ asset('assets/img/forme1.webp') }}')">
+        <div class="colonne2">
+            <p style="margin: 2rem rem">Avec moi, vous allez pouvoir</p><br><br>
+            <lu><b>
+                <Li>partager vos émotions</Li><br><br>
+                <Li>gérer votre stress</Li><br><br>
+                <Li>vous relaxer</Li><br><br>
+                <Li>développer la présence à soi</Li><br><br>
+                <Li>vous concentrer</Li><br><br>
+                <Li>redécouvrir la joie d’apprendre</Li></b><br>
             </lu>
         </div>
     </div>
 
-    <p>Comment nous y prendrons-nous ? Venez le découvrir…</p> <br><br>
-    <div><a href="{{ path('que') }}">
-            <button>Que faisons-nous ensemble ?</button>
-        </a></div>
-    <br>
-    <div><a href="{{ path('pour-qui') }}">
-            <button>Pour qui ?</button>
-        </a></div>
-    <br>
-    <div><a href="{{ path('vittoz') }}">
-            <button>La méthode Vittoz</button>
-        </a></div>
+    <p style="margin: 2rem 20%">Comment nous y prendrons-nous ? </p><br><br>
+       <p style="margin: 2rem 40%"> <b>Venez le découvrir…</b></p>
+
+    <div class="ligne3">
+
+        <div class="bouton2" style="padding: 2rem"><a href="{{ path('que') }}">
+                Que faisons-nous ?</>
+            </a></div>
+        <br>
+        <div class="bouton1" style="padding: 3rem 0.5rem"><a href="{{ path('pour-qui') }}">
+                Pour qui ?</>
+            </a></div>
+        <br>
+        <div class="bouton2" style="padding: 2.7rem 0.5rem"><a href="{{ path('vittoz') }}">
+                La méthode Vittoz</>
+            </a></div>
+    </div>
+
 
 {% endblock %}
