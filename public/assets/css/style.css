@@ -276,13 +276,18 @@
 }
 
 .boite {
-    margin-top: 50px;
+    margin: 30px 0px;
     display: flex;
+    align-items: center;
 }
 
-.texte {
-    width: 50%;
-    margin: auto;
+.colonne1 {
+    width: 20%;
+}
+
+.colonne2 {
+    width: 40%;
+    margin: 5rem 10rem;
 }
 
 p {
@@ -297,12 +302,7 @@ li {
     font-size: 1.4rem;
 }
 
-.yvette {
-    width: 20%;
-    /*height: 100px;*/
-}
-
-.bouton {
+.bouton1 {
     height: 100px;
     width: 100px;
     background: linear-gradient(10deg, rgb(28, 57, 143), rgb(94, 172, 222));
@@ -313,23 +313,25 @@ li {
     box-shadow: 0px 5px 10px 0px #aaa;
     transition: all 0.1s;
     -webkit-transition: all 0.1s;
+    ;
 }
 
-.bouton a, .bouton a:hover, .bouton a:visited {
+.bouton1 a,.bouton1 a:hover, .bouton1 a:visited {
     color: white;
     text-decoration: none;
     text-shadow: 0px -2px #000000;
 }
 
-.bouton:hover{
+.bouton1:hover{
     background: linear-gradient(10deg, rgb(98, 77, 9), rgb(236, 191, 44));
     border-bottom: 5px solid rgba(89, 86, 86, 0.76);
     color: black;
 }
 
 
-.bouton:active {
+.bouton1:active {
     transform: translate(0px,5px);
     -webkit-transform: translate(0px,5px);
     border-bottom: 1px solid;
 }
+
