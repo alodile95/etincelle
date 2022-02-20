@@ -14,13 +14,13 @@
                     <li><a class="impair" href="{{ path('que') }}">Que faisons-nous ?</a>
                         <div class="sous-menu1">
                             <div class="sous-item">
-                                <a href="{{ path('cabinet') }}">au cabinet</a>
+                                <a class="impair" href="{{ path('cabinet') }}">au cabinet</a>
                             </div>
                             <div class="sous-item">
-                                <a href="{{ path('ecole') }}">à l'école</a>
+                                <a class="pair" href="{{ path('ecole') }}">à l'école</a>
                             </div>
                             <div class="sous-item">
-                                <a href="{{ path('entreprise') }}">en entreprise</a>
+                                <a class="impair" href="{{ path('entreprise') }}">en entreprise</a>
                             </div>
                         </div>
                     </li>
@@ -28,21 +28,29 @@
                 <li><a class="pair" href="{{ path('pour-qui') }}">Pour qui ?</a></li>
                 <li><a class="impair" href="{{ path('actualites') }}">Actualités</a></li>
                 <li><a class="pair" href="{{ path('exercices') }}">Exercices</a></li>
-                <li><a class="impair" href="{{ path('avis') }}">Avis</a></li>
-                <li><a class="pair" href="{{ path('contact') }}">Contact</a></li>
+                <div class="avis">
+                    <li><a class="impair" href="{{ path('avis') }}">Avis</a>
+                    <div class="sous-menu2">
+                        <div class="sous-item">
+                            <a class="pair" href="{{ path('avis_edition') }}">laisser un avis</a>
+                        </div>
+                    </div>
+                    </li>
+                </div>
+                <div class="contact">
+                    <li><a class="pair" href="{{ path('contact') }}">Contact</a>
+                        <div class="sous-menu3">
+                            <div class="sous-item">
+                                <a class="pair" href="{{ path('message') }}">envoyer un message</a>
+                            </div>
+                            <div class="sous-item">
+                                <a class="impair" href="{{ path('message') }}">prendre rendez-vous</a>
+                            </div>
+                        </div>
+                    </li>
+                </div>
             </ul>
-            <a href="{{ path('home') }}"><h1 class="logo pair">Étincelle-Vittoz</h1></a>
+            <a href="{{ path('home') }}"><h1 class="logo impair">Étincelle-Vittoz</h1></a>
         </div>
     </nav>
-    {#    <nav> #}
-    {#        <div><a href="{{ path('home') }}">Accueil</a></div> #}
-    {#        <div><a href="{{ path('qui') }}">Qui suis-je ?</a></div> #}
-    {#        <div><a href="{{ path('vittoz') }}">La méthode Vittoz</a></div> #}
-    {#        <div><a href="{{ path('que') }}">Que faisons-nous ensemble ?</a></div> #}
-    {#        <div><a href="{{ path('pour-qui') }}">Pour qui ?</a></div> #}
-    {#        <div><a href="{{ path('actualites') }}">Actualités</a></div> #}
-    {#        <div><a href="{{ path('exercices') }}">Exercices</a></div> #}
-    {#        <div><a href="{{ path('avis') }}">Avis</a></div> #}
-    {#        <div><a href="{{ path('contact') }}">Contact</a></div> #}
-    {#    </nav> #}
 </header>
