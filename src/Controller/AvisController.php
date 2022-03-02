@@ -50,9 +50,9 @@ class AvisController extends AbstractController
             $this->entityManager->flush();
 
 //  envoi d'un email à l'administrateur pour prévenir de l'arrivée d'un nouveau message
-            $content = "'<b>" .$avis->getPseudo()."</b>' t'a laissé l'avis suivant depuis son adresse ". $avis->getEmail()." : <br><br>Titre de l'avis :<b>". $avis->getTitre() . "</b><br><br>Corps du message :<br><b>" . $avis->getCorps() . "</b><br><br><button>Aller sur le site pour le valider</button>";
+            $content = "<b>" .$avis->getPseudo()."</b> a laissé l'avis suivant depuis son adresse ". $avis->getEmail(). " : <div style='border: #d25c5c solid 3px ; padding: 5px ; margin: auto'><br>Titre de l'avis : <br><br><em>" . $avis->getTitre() . "</em><br><br>Corps de l'avis :<br><br><em>" . $avis->getCorps() . "</em><br><br></div><br><button>Aller sur le site pour le valider</button>";
             $mail = new Mail();
-            $mail->send('alain.pegeot@gmail.com', 'Alain','Tu as un nouvel avis sur ton site.',$content);
+            $mail->send('alain.pegeot@gmail.com', 'Alain','Nouvel avis sur Étincelle-Vittoz',$content);
 
 
         }

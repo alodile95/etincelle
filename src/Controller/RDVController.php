@@ -38,11 +38,11 @@ class RDVController extends AbstractController
             $this->entityManager->flush();
 
             //  envoi d'un email à l'administrateur pour prévenir de l'arrivée d'un nouveau rdv
-            $content = "<b>". $rdv->getPrenom() ." ". $rdv->getNom() . " </b> demande un rendez-vous. <br><br><b>
+            $content = "<div style='border: #377207 solid 3px ; padding: 5px ; margin: auto'><b>" . $rdv->getPrenom() ." ". $rdv->getNom() . " </b> demande un rendez-vous. <br><br><b>
             email : " . $rdv->getEmail() . " <br><br>
             téléphone : ". $rdv->getTelephone() ."</b><br><br>
             Voici son motif (facultatif) : <br><br><em>"
-            . $rdv->getMotif() . "</em><br><br><br>
+            . $rdv->getMotif() . "</em><br><br></div><br>
             <b> Il attend une réponse.</b>";
             $mail = new Mail();
             $mail->send('alain.pegeot@gmail.com', 'Alain', 'Nouvelle demande de rendez-vous pour Étincelle-Vittoz.', $content);

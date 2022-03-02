@@ -41,7 +41,7 @@ class MessageType extends AbstractType
                 ]
             ])
             ->add('submit', SubmitType::class, [
-                'label' => 'Publiez votre avis'
+                'label' => 'Envoyer le message'
             ]);
         ;
     }

@@ -39,9 +39,9 @@ class MessageController extends AbstractController
             $this->entityManager->flush();
 
 //  envoi d'un email à l'administrateur pour prévenir de l'arrivée d'un nouveau message
-            $content = "'<b>" . $message->getNom() . "</b>' t'a laissé le message suivant depuis son adresse" . $message->getMail() . " : <br><br>Titre du message :<br><b>" . $message->getTitre() . "</b><br><br/> Corps du message : <br>" . $message->getCorps() . "<br><br><b> Il attend une réponse.</b>";
+            $content = "<b>" . $message->getNom() . "</b> a laissé le message suivant depuis son adresse " . $message->getMail() . " : <div style='border: #83b3f1 solid 3px ; padding: 5px ; margin: auto'><br>Titre du message :<br><br><em>" . $message->getTitre() . "</em><br><br/> Corps du message : <br><br><em>" . $message->getCorps() . "</em><br><br></div><br><b> Il attend une réponse.</b>";
             $mail = new Mail();
-            $mail->send('alain.pegeot@gmail.com', 'Alain', 'Tu as un nouveau message pour Étincelle.', $content);
+            $mail->send('alain.pegeot@gmail.com', 'Alain', 'Nouveau message pour Étincelle-Vittoz', $content);
         }
 
         return $this->render('message/message.html.twig',[
@@ -50,3 +50,4 @@ class MessageController extends AbstractController
     }
 }
 //TODO changer la présentation du Dashboard et en particulier la première page
+//TODO installer des messages pour assurer que les avis, messages et prises de RDV ont bien été pris en compte
