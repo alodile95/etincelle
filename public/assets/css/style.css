@@ -45,21 +45,20 @@
 
 .sous-menu1 {
     visibility: hidden;
-    display: flex;
     position: absolute;
+    background-color: #fff;
 }
 
 .sous-menu2 {
     visibility: hidden;
-    display: flex;
     position: absolute;
+    background-color: #fff;
 }
 
 .sous-menu3 {
     visibility: hidden;
-    display: flex;
     position: absolute;
-    right: 10px;
+    background-color: #fff;
 }
 
 .sous-item {
@@ -276,6 +275,7 @@
 }
 
 .ligne1 {
+    margin: 2rem 0rem;
     display: flex;
     align-items: center;
 }
@@ -288,6 +288,7 @@
 .ligne1 .colonne2 {
     width: 40%;
     margin: 5rem 10rem;
+    background-color: #b7b5a3;
 }
 
 p {

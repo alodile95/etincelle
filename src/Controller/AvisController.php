@@ -62,6 +62,3 @@ class AvisController extends AbstractController
         ]);
     }
 }
-//TODO faire une page avec les messages pour Yvette
-//TODO faire une page de demande de RDV ?
-//TODO faire une page avec les demandes de RDV pour Yvette?

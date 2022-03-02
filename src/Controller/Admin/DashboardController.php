@@ -6,6 +6,7 @@ use App\Entity\Article;
 use App\Entity\Avis;
 use App\Entity\Contexte;
 use App\Entity\Message;
+use App\Entity\RDV;
 use App\Entity\User;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
@@ -37,6 +38,7 @@ class DashboardController extends AbstractDashboardController
 //        yield MenuItem::linkToCrud('Contextes', 'fas fa-building', Contexte::class);
         yield MenuItem::linkToCrud('Avis', 'fas fa-grin-stars', Avis::class);
         yield MenuItem::linkToCrud('Messages', 'fas fa-envelope', Message::class);
+        yield MenuItem::linkToCrud('RDV', 'fas fa-calendar-plus', RDV::class);
     }
 }
 
