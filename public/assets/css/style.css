@@ -32,7 +32,7 @@
 
 .navbar-container {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between ;
     height: 110px;
     align-items: center;
 }
@@ -40,8 +40,12 @@
 .menu-items {
     order: 2;
     display: flex;
+    justify-content: end;
 }
 
+.lien{
+    color: white;
+}
 .sous-menu1 {
     visibility: hidden;
     position: absolute;
@@ -66,14 +70,17 @@
 
 .que:hover .sous-menu1 {
     visibility: visible;
+    margin-left: -20px;
 }
 
 .avis:hover .sous-menu2 {
     visibility: visible;
+    margin-left: -20px;
 }
 
 .contact:hover .sous-menu3 {
     visibility: visible;
+    margin-left: -40px;
 }
 
 .logo {
@@ -106,6 +113,7 @@
 .navbar a:hover {
     color: #ecbf2c;
 }
+
 
 @media (max-width: 840px) {
     .navbar {
@@ -240,7 +248,23 @@
 }
 
 /*fin Barre de navigation*/
+/*Footer*/
+footer{
+    margin-top: 2rem;
+    height: 15rem;
+    background-color: #00ADCD;
+    color: white;
+    padding: 2rem;
+    font-size: 0.8rem;
+}
 
+.footer_container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/*fin du Footer*/
 
 h1, h2, p {
     color: #345c81;
@@ -267,13 +291,17 @@ p {
     font-size: 1.4rem;
 }
 
+
 .ligne1 {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .ligne1 .colonne1 {
+    width: 50%;
+}
+
+.sous-colonne{
     width: 50%;
     margin-left: 50px;
     display: flex;
@@ -284,6 +312,7 @@ p {
 .ligne1 .colonne2 {
     width: 50%;
     padding: 30px;
+    margin-right: 10px;
 }
 
 .ligne2 .colonne1 {
