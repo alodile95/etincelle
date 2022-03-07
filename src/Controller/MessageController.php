@@ -52,3 +52,5 @@ class MessageController extends AbstractController
 //TODO changer la présentation du Dashboard et en particulier la première page
 //TODO régler le menu vertical
 //TODO mettre un signe pour les menus déroulants
+//TODO faire le footer
+//TODO mettre le logo à gauche dans la barre de menu

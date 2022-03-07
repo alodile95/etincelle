@@ -136,7 +136,6 @@
     }
 
     .navbar-container .hamburger-lines {
-        /*display: block;*/
         height: 28px;
         width: 35px;
         position: absolute;
@@ -243,7 +242,7 @@
 /*fin Barre de navigation*/
 
 
-h1,h2,h3,p{
+h1, h2, p {
     color: #345c81;
 }
 
@@ -253,7 +252,7 @@ h1,h2,h3,p{
     background-repeat: no-repeat;
 }
 
-h1{
+h1 {
     font-size: 4em;
     margin: 50px 40px 20px 40px;
 }
@@ -262,8 +261,8 @@ h2 {
     font-size: 2.4em;
     margin: 0px 60px 20px 60px;
 }
+
 p {
-    color: #345c81;
     margin-left: 1rem;
     font-size: 1.4rem;
 }
@@ -271,9 +270,10 @@ p {
 .ligne1 {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.colonne1 {
+.ligne1 .colonne1 {
     width: 50%;
     margin-left: 50px;
     display: flex;
@@ -283,20 +283,25 @@ p {
 
 .ligne1 .colonne2 {
     width: 50%;
-    margin: 20px 20px 20px 40px;
     padding: 30px;
 }
 
+.ligne2 .colonne1 {
+    width: 50%;
+    margin-left: 50px;
+    margin-top: 100px;
+    padding: 30px;
+    background: linear-gradient(#004C88, #00AACB);
+    color: white;
+}
+
 li {
-    color: rgba(24, 60, 173, 0.71);
-    margin-left: 2rem;
+    margin-left: 20%;
     font-size: 1.4rem;
 }
 
-button {
+.button1 {
     font-size: 1.2rem;
-}
-.bouton1 {
     height: 50px;
     width: 200px;
     background-color: #00ADCD;
@@ -307,45 +312,39 @@ button {
     box-shadow: 5px 5px 5px darkgrey;
 }
 
-.bouton1 a,.bouton1 a:hover, .bouton1 a:visited {
-    text-decoration: none;
+.button2 {
+    font-size: 1.2rem;
+    height: 50px;
+    width: 200px;
+    background-color: #66AAE0;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    border: none;
+    box-shadow: 5px 5px 5px darkgrey;
 }
 
-.bouton1:hover{
-    background-color: #ecbf2c;
+.button3 {
+    font-size: 1.2rem;
+    height: 50px;
+    width: 200px;
+    background-color: #236BB1;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    border: none;
     box-shadow: 5px 5px 5px darkgrey;
 }
 
 
-.bouton2 {
-    height: 120px;
-    width: 120px;
-    background: linear-gradient(10deg, rgb(98, 77, 9), rgb(236, 191, 44));
-    border-radius: 50%;
-    text-align: center;
-    color: white;
-    box-shadow: 0px 5px 10px 0px #aaa;
-    transition: all 0.1s;
-    -webkit-transition: all 0.1s;
-    margin: 2rem auto;
-}
-
-.bouton2 a,.bouton2 a:hover, .bouton2 a:visited {
-    color: white;
+a, a:hover, a:visited {
     text-decoration: none;
-    text-shadow: 0px -2px #000000;
 }
 
-.bouton2:hover{
-    background: linear-gradient(10deg, rgb(28, 57, 143), rgb(94, 172, 222));
-    border-bottom: 5px solid rgba(89, 86, 86, 0.76);
-    color: black;
-}
-
-.bouton2:active {
-    transform: translate(0px,5px);
-    -webkit-transform: translate(0px,5px);
-    border-bottom: 1px solid;
+a button:hover {
+    background-color: #ecbf2c;
+    box-shadow: 5px 5px 5px darkgrey;
+    cursor: pointer;
 }
 
 .ligne2 {
@@ -355,17 +354,18 @@ button {
     background-repeat: no-repeat;
 }
 
-.ligne3 {
-    display: flex;
-}
-
-.ligne2 .colonne2{
-    padding: 5rem;
-    margin: auto;
-    text-align: center;
-    position: relative;
+.ligne2 .colonne2 {
+    width: 50%;
+    margin-left: 20px;
 }
 
 li {
     list-style: none;
+}
+
+.boutons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
