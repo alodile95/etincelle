@@ -4,64 +4,75 @@
 
 {% block body %}
 
-    <div class="ouverture" style="background-image: url('{{ asset('assets/img/table_atelier.webp') }}')">
-        <div class="dans_ouverture">
-            <h1>Étincelle-Vittoz</h1><br>
-            <h2>cabinet de thérapie</h2>
-        </div>
-
-    </div>
     <div class="ligne1">
-        <div class="colonne1"><img src="{{ asset('assets/img/Yvette_détourée.webp') }}" alt="Yvette Ogier"
-                                   height="550px" width="270    px">
+
+        <div class="colonne1">
+            <h1>Étincelle-Vittoz</h1>
+            <h2>Cabinet méthode Vittoz</h2>
+            <div>
+                <br><br>
+                <p>Je serais heureuse de vous accompagner sur votre chemin de vie (avec vos difficultés et vos
+                    pépites) qui vous mènera vers un mieux-vivre.<br><br>
+                    Vous trouverez ici des renseignements sur la méthode Vittoz que j’utilise aussi bien pour
+                    enfants ou adultes, en individuel ou en groupe.<br><br>
+                    <em style="margin-left: 5rem">Yvette Ogier,</em> psychothérapeute Vittoz <br><br></p>
+            </div>
+            <div>
+                <img src="{{ asset('assets/img/YvetteSurFond.png') }}" alt="Yvette Ogier" style="width: 300px">
+            </div>
+            <a href="{{ path('qui') }}">
+                <button class="bouton1">À propos de moi</button>
+            </a>
         </div>
         <div class="colonne2">
-            <div><p>Je serais heureuse de pouvoir vous accompagner dans un chemin en profondeur qui vous
-                    mènera vers un
-                    mieux-vivre.<br>
-                    Vous trouverez ici des renseignements sur la méthode Vittoz que j’utilise aussi bien pour les
-                    enfants
-                    que pour les adultes, en individuel ou en groupe, à mon cabinet Étincelle-Vittoz de Poissy, dans les
-                    écoles ou en entreprise.<br><br>
-                    <em style="margin-left: 5rem">Yvette Ogier,</em> psychothérapeute Vittoz </p>
-            </div>
-            <div class="bouton1" style="padding: 1.9rem">
-                <a href="{{ path('qui') }}">Qui suis-je ?</a>
-            </div>
+            <img src="{{ asset('assets/img/entrée_cabinet.webp') }}" alt="entrée cabinet Étincelle-Vittoz"
+                 style="width: 80% ; border: #4A76A3 solid 10px">
+
         </div>
 
     </div>
-    <div class="ligne2">
-        <div class="colonne2">
-            <p style="margin: 2rem rem">Avec moi, vous allez pouvoir</p><br><br>
-            <lu><b>
-                <Li>partager vos émotions</Li><br><br>
-                <Li>gérer votre stress</Li><br><br>
-                <Li>vous relaxer</Li><br><br>
-                <Li>développer la présence à soi</Li><br><br>
-                <Li>vous concentrer</Li><br><br>
-                <Li>redécouvrir la joie d’apprendre</Li></b><br>
-            </lu>
+
+    <div class="forme" style="background-image:url('{{ asset('assets/img/forme.png') }}');">
+
+        <div class="ligne2">
+            <div class="colonne2">
+                <p style="margin: 2rem rem">Avec moi, vous allez pouvoir</p><br><br>
+                <lu><b>
+                        <Li>partager vos émotions</Li>
+                        <br><br>
+                        <Li>gérer votre stress</Li>
+                        <br><br>
+                        <Li>vous relaxer</Li>
+                        <br><br>
+                        <Li>développer la présence à soi</Li>
+                        <br><br>
+                        <Li>vous concentrer</Li>
+                        <br><br>
+                        <Li>redécouvrir la joie d’apprendre</Li>
+                    </b><br>
+                </lu>
+            </div>
+        </div>
+
+        <p style="margin: 2rem 20%">Comment nous y prendrons-nous ? </p><br><br>
+        <p style="margin: 2rem 40%"><b>Venez le découvrir…</b></p>
+
+        <div class="ligne3">
+
+            <div class="bouton2" style="padding: 2rem"><a href="{{ path('que') }}">
+                    Que faisons-nous ?</>
+                </a></div>
+            <br>
+            <div class="bouton1" style="padding: 3rem 0.5rem"><a href="{{ path('pour-qui') }}">
+                    Pour qui ?</>
+                </a></div>
+            <br>
+            <div class="bouton2" style="padding: 2.7rem 0.5rem"><a href="{{ path('vittoz') }}">
+                    La méthode Vittoz</>
+                </a></div>
         </div>
     </div>
 
-    <p style="margin: 2rem 20%">Comment nous y prendrons-nous ? </p><br><br>
-       <p style="margin: 2rem 40%"> <b>Venez le découvrir…</b></p>
-
-    <div class="ligne3">
-
-        <div class="bouton2" style="padding: 2rem"><a href="{{ path('que') }}">
-                Que faisons-nous ?</>
-            </a></div>
-        <br>
-        <div class="bouton1" style="padding: 3rem 0.5rem"><a href="{{ path('pour-qui') }}">
-                Pour qui ?</>
-            </a></div>
-        <br>
-        <div class="bouton2" style="padding: 2.7rem 0.5rem"><a href="{{ path('vittoz') }}">
-                La méthode Vittoz</>
-            </a></div>
-    </div>
 
 
 {% endblock %}

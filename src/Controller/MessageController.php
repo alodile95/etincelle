@@ -50,4 +50,5 @@ class MessageController extends AbstractController
     }
 }
 //TODO changer la présentation du Dashboard et en particulier la première page
-//TODO installer des messages pour assurer que les avis, messages et prises de RDV ont bien été pris en compte
+//TODO régler le menu vertical
+//TODO mettre un signe pour les menus déroulants
