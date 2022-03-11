@@ -8,8 +8,8 @@
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><a class="menu" href="{{ path('qui') }}">À propos de moi </a></li>
                 <li><a class="menu" href="{{ path('vittoz') }}">La méthode Vittoz</a></li>
+                <li><a class="menu" href="{{ path('qui') }}">À propos de moi </a></li>
                 <div class="que">
                     <li class="lien">Que faisons-nous&nbsp;?
                         <div class="sous-menu1">
@@ -44,10 +44,10 @@
                     </li>
                 </div>
                 <div class="contact">
-                    <li class="lien">Contact
+                    <li><a class="menu" href="{{ path('contact') }}">Contact</a>
                         <div class="sous-menu3">
                             <div class="sous-item">
-                                <a class="menu-bis" href="{{ path('contact') }}">Comment nous contacter&nbsp;?</a>
+                                <a class="menu-bis" href="{{ path('contact') }}">Nous contacter</a>
                             </div>
                             <div class="sous-item">
                                 <a class="menu-bis" href="{{ path('message') }}">Envoyer un message</a>
@@ -59,7 +59,7 @@
                     </li>
                 </div>
             </ul>
-            <a href="{{ path('home') }}"><h6 class="logo menu">Étincelle-Vittoz</h6></a>
+            <a href="{{ path('home') }}"><h6 class="logo">Étincelle-Vittoz</h6></a>
         </div>
     </nav>
 </header>

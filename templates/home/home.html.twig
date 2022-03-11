@@ -3,40 +3,41 @@
 {% block title %}Bienvenue à Étincelle-Vittoz{% endblock %}
 
 {% block body %}
-
-    <div class="ligne1">
+    <div class="forme" style="background-image:url('{{ asset('assets/img/forme2.png') }}')">
+        <div class="ligne1">
 
         <div class="colonne1">
-            <h1 style="">Étincelle-Vittoz</h1>
+            <h1>Étincelle-Vittoz</h1>
             <h2>Cabinet méthode Vittoz</h2>
             <div class="sous-colonne">
                 <div>
-                    <br><br>
-                    <p>Je serais heureuse de vous accompagner sur votre chemin de vie (avec vos difficultés et vos
-                        pépites) qui vous mènera vers un mieux-vivre.<br><br>
+                    <br>
+                    <p>Je serais heureuse de vous accompagner sur votre chemin de vie
+                        (avec vos difficultés et vos pépites) qui vous mènera vers un mieux-vivre.<br><br>
                         Vous trouverez ici des renseignements sur la méthode Vittoz que j’utilise aussi bien pour
                         enfants ou adultes, en individuel ou en groupe.<br><br>
                         <em style="margin-left: 5rem">Yvette Ogier,</em> psychothérapeute Vittoz <br><br></p>
                 </div>
                 <div>
                     <img src="{{ asset('assets/img/YvetteSurFond.png') }}" alt="Yvette Ogier" style="width: 300px">
+                    <a href="{{ path('qui') }}">
+                        <button class="button1" style="margin-top: 30px;">À propos de moi</button>
+                    </a>
                 </div>
-                <a href="{{ path('qui') }}">
-                    <button class="button1" style="margin-top: 30px;">À propos de moi</button>
-                </a>
+
             </div>
 
 
         </div>
         <div class="colonne2">
             <img src="{{ asset('assets/img/entrée_cabinet.webp') }}" alt="entrée cabinet Étincelle-Vittoz"
-                 style="border: #4A76A3 solid 10px; width: 100%">
+                 style="border: #4A76A3 solid 10px">
 
         </div>
 
     </div>
 
-    <div class="forme" style="background-image:url('{{ asset('assets/img/forme.png') }}');">
+    <div class="forme" style="background-image:url('{{ asset('assets/img/forme2.png') }}');">
 
         <div class="ligne2">
             <div class="colonne1">

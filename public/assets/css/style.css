@@ -4,9 +4,15 @@
 *::after,
 *::before {
     box-sizing: border-box;
-    padding: 0;
+    padding: 0px;
     margin: 0px;
     font-family: 'El Messiri', sans-serif;
+}
+
+.cadre{
+    min-height:100%;
+    margin:0 auto;
+    position:relative;
 }
 
 .html {
@@ -86,6 +92,10 @@
 .logo {
     order: 1;
     font-size: 1.5rem;
+}
+
+.logo a:hover{
+    color: #ECBF2CFF;
 }
 
 .menu-items li {
@@ -250,45 +260,54 @@
 /*fin Barre de navigation*/
 /*Footer*/
 footer{
-    margin-top: 2rem;
     height: 15rem;
     background-color: #00ADCD;
     color: white;
-    padding: 2rem;
-    font-size: 0.8rem;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+    position: absolute;
+    bottom: -18rem;
 }
 
 .footer_container{
     display: flex;
     justify-content: space-evenly;
-
 }
 
+footer a:visited, a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #ECBF2CFF;
+}
 /*fin du Footer*/
 
 h1, h2, p {
     color: #345c81;
 }
 
-
 .forme {
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 1rem;
 }
 
 h1 {
-    font-size: 4em;
-    margin: 50px 40px 20px 40px;
+    font-size: 3rem;
+    margin: 0.5rem 0 0 5rem;
 }
 
 h2 {
-    font-size: 2.4em;
-    margin: 0px 60px 20px 60px;
+    font-size: 2rem;
+    margin: 0 0 1rem 5rem;
 }
 
 p {
     margin-left: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 
@@ -298,30 +317,43 @@ p {
 }
 
 .ligne1 .colonne1 {
-    width: 50%;
+    width: 60%;
 }
 
 .sous-colonne{
-    width: 50%;
     margin-left: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 70%;
 }
 
 .ligne1 .colonne2 {
-    width: 50%;
+    width: 40%;
     padding: 30px;
     margin-right: 10px;
 }
 
+
+.ligne2 {
+    display: flex;
+    align-items: center;
+    background-size: 1600px;
+    background-repeat: no-repeat;
+}
+
 .ligne2 .colonne1 {
     width: 50%;
+    max-width: 50rem;
     margin-left: 50px;
     margin-top: 100px;
     padding: 30px;
     background: linear-gradient(#004C88, #00AACB);
     color: white;
+}
+.ligne2 .colonne2 {
+    width: 50%;
+    margin-left: 20px;
 }
 
 li {
@@ -374,18 +406,6 @@ a button:hover {
     background-color: #ecbf2c;
     box-shadow: 5px 5px 5px darkgrey;
     cursor: pointer;
-}
-
-.ligne2 {
-    display: flex;
-    align-items: center;
-    background-size: 1600px;
-    background-repeat: no-repeat;
-}
-
-.ligne2 .colonne2 {
-    width: 50%;
-    margin-left: 20px;
 }
 
 li {
