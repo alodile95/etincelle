@@ -4,19 +4,23 @@
 *::after,
 *::before {
     box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     font-family: 'El Messiri', sans-serif;
 }
 
-.cadre{
-    min-height:100%;
-    margin:0 auto;
-    position:relative;
+.html, .body {
+    margin:0;
+    padding:0;
+    height:100%;
+    font-size: 62.5%;
 }
 
-.html {
-    font-size: 62.5%;
+.cadre {
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 20rem;
 }
 
 .navbar input[type="checkbox"],
@@ -38,7 +42,7 @@
 
 .navbar-container {
     display: flex;
-    justify-content:space-between ;
+    justify-content: space-between;
     height: 110px;
     align-items: center;
 }
@@ -49,9 +53,10 @@
     justify-content: end;
 }
 
-.lien{
+.lien {
     color: white;
 }
+
 .sous-menu1 {
     visibility: hidden;
     position: absolute;
@@ -94,7 +99,7 @@
     font-size: 1.5rem;
 }
 
-.logo a:hover{
+.logo a:hover {
     color: #ECBF2CFF;
 }
 
@@ -174,7 +179,7 @@
     }
 
     .navbar-container .hamburger-lines .line1 {
-        transform-origin: 0% 0%;
+        transform-origin: 0 0;
         transition: transform 0.3s ease-in-out;
     }
 
@@ -183,7 +188,7 @@
     }
 
     .navbar-container .hamburger-lines .line3 {
-        transform-origin: 0% 100%;
+        transform-origin: 0 100%;
         transition: transform 0.3s ease-in-out;
     }
 
@@ -259,7 +264,7 @@
 
 /*fin Barre de navigation*/
 /*Footer*/
-footer{
+footer {
     height: 15rem;
     background-color: #00ADCD;
     color: white;
@@ -267,22 +272,25 @@ footer{
     font-size: 0.9rem;
     width: 100%;
     position: absolute;
-    bottom: -18rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-.footer_container{
+.footer_container {
     display: flex;
     justify-content: space-evenly;
 }
 
-footer a:visited, a{
+footer a:visited, a {
     color: white;
     text-decoration: none;
 }
 
-footer a:hover{
+footer a:hover {
     color: #ECBF2CFF;
 }
+
 /*fin du Footer*/
 
 h1, h2, p {
@@ -314,13 +322,14 @@ p {
 .ligne1 {
     display: flex;
     justify-content: space-around;
+    margin-right: 2rem;
 }
 
 .ligne1 .colonne1 {
     width: 60%;
 }
 
-.sous-colonne{
+.sous-colonne {
     margin-left: 50px;
     display: flex;
     flex-direction: column;
@@ -330,8 +339,6 @@ p {
 
 .ligne1 .colonne2 {
     width: 40%;
-    padding: 30px;
-    margin-right: 10px;
 }
 
 
@@ -351,9 +358,15 @@ p {
     background: linear-gradient(#004C88, #00AACB);
     color: white;
 }
+
 .ligne2 .colonne2 {
     width: 50%;
     margin-left: 20px;
+}
+
+.image-contenu {
+    border: #4A76A3 solid 10px;
+    max-width: 100%;
 }
 
 li {
@@ -398,6 +411,32 @@ li {
 }
 
 
+.button4 {
+    font-size: 1.2rem;
+    height: 50px;
+    width: max-content;
+    padding: 1rem;
+    background-color: #66AAE0;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    border: none;
+    box-shadow: 5px 5px 5px darkgrey;
+}
+
+.button5 {
+    font-size: 1.2rem;
+    height: 50px;
+    width: max-content;
+    padding: 1rem;
+    /*background-color: #236BB1;*/
+    /*border-radius: 50px;*/
+    text-align: center;
+    color: #66AAE0FF;
+    border: none;
+    box-shadow: 5px 5px 5px darkgrey;
+}
+
 a, a:hover, a:visited {
     text-decoration: none;
 }
@@ -412,9 +451,13 @@ li {
     list-style: none;
 }
 
-.boutons{
+.boutons {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+.corps {
+    margin: 2rem;
 }
