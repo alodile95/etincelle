@@ -10,9 +10,9 @@
 }
 
 .html, .body {
-    margin:0;
-    padding:0;
-    height:100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
     font-size: 62.5%;
 }
 
@@ -341,7 +341,6 @@ p {
     width: 40%;
 }
 
-
 .ligne2 {
     display: flex;
     align-items: center;
@@ -447,10 +446,6 @@ a button:hover {
     cursor: pointer;
 }
 
-li {
-    list-style: none;
-}
-
 .boutons {
     display: flex;
     flex-direction: row;
@@ -460,4 +455,55 @@ li {
 
 .corps {
     margin: 2rem;
+}
+
+.table {
+    background: linear-gradient(#004C88, #00AACB);
+    color: white;
+    padding: 3rem;
+    margin: 3rem 8rem;
+}
+
+.ligne3 {
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 6rem;
+}
+
+.ligne3 .colonne1 {
+    width: 50%;
+    margin-right: 2rem;
+    background-color: #01adcd;
+    color: white;
+    padding: 2rem;
+}
+
+.ligne3 .colonne2 {
+    width: 50%;
+    margin-right: 2rem;
+    background-color: #01adcd;
+    color: white;
+    padding: 2rem;
+}
+
+.ligne3 .colonne1 .sous-colonne2 h2 {
+    color: white;
+    margin: auto;
+}
+
+.ligne3 .colonne2 .sous-colonne2 h2 {
+    color: white;
+}
+
+.sous-colonne2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+
+img{
+    max-width: 80%;
+    /*margin: 2rem;*/
+margin: inherit;
 }
