@@ -4,33 +4,64 @@
 
 {% block body %}
     <h1>Que faisons-nous ensemble ?</h1>
-    <p>Nous travaillons en séances individuelles ou collectives. <br>
-        Notre travail a pour but d’améliorer la maîtrise cérébrale pour une meilleure conscience au monde et l’intégration harmonieuse de nos perceptions, nos émotions, nos pensées, nos décisions, nos gestes. Cela passe par des exercices simples sur le corps et nos sens.<br>
+    <div class="corps">
+        <p>Nous travaillons en séances individuelles ou collectives. <br>
+            Le travail a pour but une nouvelle présence au monde et une intégration harmonieuse de nos perceptions,
+            émotions, pensées, décisions et gestes.
+            <br>
+            La pratique régulière des exercices améliore l’équilibre des deux fonctions principales du cerveau :
+            réceptivité et émissivité. Ce « contrôle cérébral » s’expérimente au travers d’exercices.
+            <br></p>
+    </div>
+    <div class="table"><h2 style="color: white">Différents temps de la thérapie :</h2>
+        <br>
+        <ul>
+            <li>Exercices de réceptivité consciente à intégrer à la vie quotidienne</li>
+            <li>Voir, entendre, toucher, goûter, sentir consciemment met le mental au repos et ouvre un nouvel état de
+                présence
+            </li>
+            <li>Temps de relaxation psycho-sensorielle</li>
+            <li>Présence à son histoire de vie</li>
+            <li>Exercices de concentration ou décentration</li>
+            <li>Acceptation et expression par le dessin, l’écriture des émotions</li>
+        </ul>
+    </div>
+    <div class="corps">
+        <p>Le travail thérapeutique permet de nommer ses états corporels et psychiques. <br>
+            Il contribue à relire son histoire de vie et facilite les prises de consciences. <br></p>
+        <br>
+             <p class="centre"> Vous trouverez sur ce site un exemple d’exercice</p><br>
+                <div class="boutons">
+                    <a href="{{ path('exercices') }}">
+                        <button class="button3">Exercices</button>
+                    </a>
+                </div>
+        <br><br>
+        <p>L’approche est évidemment bien différente selon les publics et le contexte. <br>
+            J’exerce la méthode Vittoz au <b>cabinet Étincelle-Vittoz à Poissy</b>, dans un cadre naturel aux portes de Paris, et en me déplaçant dans les <b>écoles</b> ou en <b>entreprises</b>.</p>
+        <br>
+        </p>
+    </div>
 
-        Il y aura des temps de <br>
-<lu>
-    <li>relaxation</li>
-    <li>« conscience au monde »</li>
-    <li>décompression</li>
-    <li>concentration</li>
-    <li>écoute</li>
-    <li>échanges</li>
-    <li>dessin</li>
-    <li>écriture</li>
-    <li>mémoire</li>
-</lu>
-        <br>
-        Vous trouverez sur notre site des exemples d'exercices que vous pouvez pratiquer chez vous en attendant de venir me voir.
-        <br>
-        <br>
-    <div><a href="{{ path('exercices') }}"><button>Exercices</button></a></div>
-    <br>
-        L’approche est évidemment bien différente selon les publics et le contexte.
-        J’exerce la méthode Vittoz à mon cabinet Étincelle-Vittoz de Poissy, mais aussi en me rendant dans les écoles ou dans les entreprises.
-    </p>
-    <div><a href="{{ path('cabinet') }}"><button>Les séances au cabinet</button></a></div>
-    <div><a href="{{ path('ecole') }}"><button>Les séances à l'école</button></a></div>
-    <div><a href="{{ path('entreprise') }}"><button>Les séances en entreprise</button></a></div>
-    <div><a href="{{ path('home') }}"><button>Nous envoyer un message</button></a></div>
-    <div><a href="{{ path('home') }}"><button>Prendre rendez-vous</button></a></div>
+
+    <div class="boutons">
+        <a href="{{ path('cabinet') }}">
+            <button class="button2">Les séances au cabinet</button>
+        </a><br>
+        <a href="{{ path('ecole') }}">
+            <button class="button1">Les séances à l'école</button>
+        </a><br>
+        <a href="{{ path('entreprise') }}">
+            <button class="button3">Les séances en entreprise</button>
+        </a>
+    </div>
+    <br><br><br>
+    <div class="boutons">
+        <a href="{{ path('message') }}">
+            <button class="button6">Nous envoyer un message</button>
+        </a><br>
+        <a href="{{ path('rdv') }}">
+            <button class="button6">Prendre rendez-vous</button>
+        </a><br>
+    </div>
 {% endblock %}
